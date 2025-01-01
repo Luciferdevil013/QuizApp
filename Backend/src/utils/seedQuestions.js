@@ -4,7 +4,7 @@ import Question from '../models/Question.js';
 
 dotenv.config();
 
-const sampleQuestions = [
+export const demoQuestions = [
   {
     question: "What is the capital of France?",
     options: ["London", "Berlin", "Paris", "Madrid"],
@@ -17,14 +17,31 @@ const sampleQuestions = [
     correctAnswer: "Mars",
     points: 10
   },
-  // Add more sample questions as needed
+  {
+    question: "What is 2 + 2?",
+    options: ["3", "4", "5", "6"],
+    correctAnswer: "4",
+    points: 10
+  },
+  {
+    question: "Who painted the Mona Lisa?",
+    options: ["Van Gogh", "Da Vinci", "Picasso", "Rembrandt"],
+    correctAnswer: "Da Vinci",
+    points: 10
+  },
+  {
+    question: "What is the largest ocean on Earth?",
+    options: ["Atlantic", "Indian", "Arctic", "Pacific"],
+    correctAnswer: "Pacific",
+    points: 10
+  }
 ];
 
 const seedQuestions = async () => {
   try {
     await mongoose.connect(process.env.MONGODB_URI);
     await Question.deleteMany({}); // Clear existing questions
-    await Question.insertMany(sampleQuestions);
+    await Question.insertMany(demoQuestions);
     console.log('Sample questions added successfully');
     process.exit(0);
   } catch (error) {

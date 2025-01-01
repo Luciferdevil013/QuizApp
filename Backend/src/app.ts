@@ -2,10 +2,10 @@ import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import authRoutes from './routes/auth';
-import quizRoutes from './routes/quiz';
-import userRoutes from './routes/users';
-import { demoQuestions } from './utils/seedQuestions';
+import authRoutes from './routes/auth.js';
+import quizRoutes from './routes/quiz.js';
+import userRoutes from './routes/users.js';
+import { demoQuestions } from './utils/seedQuestions.js';
 
 dotenv.config();
 

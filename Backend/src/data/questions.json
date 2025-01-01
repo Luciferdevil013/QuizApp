@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "1735757668544",
+    "question": "Who is President",
+    "options": [
+      "Modi Bhaiya",
+      "Lappu",
+      "Lalu Chacha",
+      "Baba"
+    ],
+    "correctAnswer": "Lalu Chacha"
+  },
+  {
+    "_id": "1735757700683",
+    "question": "Capital of France",
+    "options": [
+      "London",
+      "BHaart",
+      "Russia",
+      "Paris"
+    ],
+    "correctAnswer": "Paris"
+  }
+]
